@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameSpace | Player Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: radial-gradient(circle at top, #171a3d, #080912 55%, #050509);
+      color: #f4f4ff;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background: rgba(8, 9, 20, .92);
+      border-bottom: 1px solid #3538ff;
+      box-shadow: 0 0 25px rgba(70, 60, 255, .25);
+    }
+    .brand { color: #7c7cff !important; font-weight: 800; letter-spacing: 2px; }
+    .hero {
+      background: linear-gradient(135deg, rgba(70,55,220,.35), rgba(0,220,255,.08));
+      border: 1px solid #4448ff;
+      border-radius: 20px;
+      box-shadow: 0 0 35px rgba(71, 66, 255, .22);
+    }
+    .neon { color: #66f7ff; text-shadow: 0 0 12px #00d9ff; }
+    .card {
+      background: rgba(18, 20, 42, .9);
+      border: 1px solid #3033a0;
+      color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    }
+    .card:hover { transform: translateY(-4px); transition: .2s; border-color: #5b5fff; }
+    .stat { font-size: 2rem; font-weight: 800; color: #8b8dff; }
+    .progress { background: #292b4b; height: 9px; }
+    .progress-bar { background: linear-gradient(90deg, #675cff, #00e5ff); }
+    .game-img {
+      height: 145px; object-fit: cover; border-radius: 12px 12px 0 0;
+      background: linear-gradient(135deg,#5426a8,#10144d);
+    }
+    .btn-neon {
+      background: #665cff; color: white; border: 0; font-weight: 700;
+      box-shadow: 0 0 16px rgba(102,92,255,.5);
+    }
+    .btn-neon:hover { background: #8178ff; color: white; }
+    footer { color: #888db0; border-top: 1px solid #24264c; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="#">GAMESPACE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-5">
+  <section class="hero p-4 p-md-5 mb-5">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <span class="badge bg-primary mb-3">PLAYER HUB</span>
+        <h1 class="display-4 fw-bold">Level up your <span class="neon">GameSpace</span></h1>
+        <p class="lead text-light opacity-75">Track your games, quests, achievements, and progress from one futuristic dashboard.</p>
+        <button class="btn btn-neon px-4 py-2">ENTER DASHBOARD</button>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="card p-4 text-center">
+          <div class="stat">LVL 27</div>
+          <p class="mb-2">XP PROGRESS</p>
+          <div class="progress mb-2"><div class="progress-bar" style="width:72%"></div></div>
+          <small>7,200 / 10,000 XP</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row g-4 mb-5">
+    <div class="col-md-4"><div class="card p-4"><h6 class="text-uppercase">Games Played</h6><div class="stat">42</div><small class="text-secondary">+6 this month</small></div></div>
+    <div class="col-md-4"><div class="card p-4"><h6 class="text-uppercase">Achievements</h6><div class="stat">128</div><small class="text-secondary">84% completion</small></div></div>
+    <div class="col-md-4"><div class="card p-4"><h6 class="text-uppercase">Hours Logged</h6><div class="stat">318h</div><small class="text-secondary">Top 12% this season</small></div></div>
+  </section>
+
+  <section class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="fw-bold">Featured Missions</h2>
+      <button class="btn btn-outline-light btn-sm">VIEW ALL</button>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card overflow-hidden h-100">
+          <div class="game-img d-flex align-items-center justify-content-center"><span class="display-5">⚔️</span></div>
+          <div class="p-4"><h4>Shadow Realm</h4><p class="text-secondary">Defeat the Night Guardian.</p>
+            <div class="progress mb-3"><div class="progress-bar" style="width:86%"></div></div>
+            <small>86% complete</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card overflow-hidden h-100">
+          <div class="game-img d-flex align-items-center justify-content-center"><span class="display-5">🚀</span></div>
+          <div class="p-4"><h4>Star Frontier</h4><p class="text-secondary">Explore three unknown sectors.</p>
+            <div class="progress mb-3"><div class="progress-bar" style="width:54%"></div></div>
+            <small>54% complete</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card overflow-hidden h-100">
+          <div class="game-img d-flex align-items-center justify-content-center"><span class="display-5">🏆</span></div>
+          <div class="p-4"><h4>Arena Clash</h4><p class="text-secondary">Win 10 ranked matches.</p>
+            <div class="progress mb-3"><div class="progress-bar" style="width:40%"></div></div>
+            <small>4 / 10 wins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card p-4 p-md-5 mb-5">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <h2>Daily Challenge</h2>
+        <p class="text-secondary mb-md-0">Complete one multiplayer match and earn a bonus <strong class="text-light">+500 XP</strong>.</p>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0"><button class="btn btn-neon">ACCEPT QUEST</button></div>
+    </div>
+  </section>
+</main>
+
+<footer class="py-4">
+  <div class="container d-flex justify-content-between">
+    <span>© 2026 GameSpace</span><span>PLAY • COMPETE • LEVEL UP</span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
